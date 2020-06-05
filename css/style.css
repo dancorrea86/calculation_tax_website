@@ -1,0 +1,84 @@
+/* Reset do CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    width: 500px;
+    height: 70%;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button,
+input {
+    width: 421px;
+    height: 74px;
+    margin-top: 40px;
+    border-radius: 10px;
+    font-size: 24px;
+    text-align: center; 
+    background-color: #EDEDED;
+    border: none;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 24px;
+}
+  
+  table, th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.menu {
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0px 2px 10px gray;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    color: teal;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.menu a:hover {
+    background-color: teal;
+    color: white;
+}
+
+.button {
+    background-color: #3E3BEB;
+    color: white;
+}
+
+.table-results,
+.form-revenues {
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .table-results {
+    display: none;
+} */
