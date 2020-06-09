@@ -16,16 +16,34 @@
             </ul>
         </nav>
     </header>
-    <section id="formId" class="form-revenues">
-        <form action="">
-            <input class="input" type="text" placeholder="Faturamento Serviços">
-            <input class="input" type="text" placeholder="Custos">
-            <input class="input" type="text" placeholder="Despesas">
-            <input class="input" type="text" placeholder="Folha de Pagamento">
-            <button class="button" type="submit" onclick="getDataForm()">Calculate</button>
+    <section class="form-revenues">
+        <form id="formId" action="result.html" method="GET">
+            <input name="fat" class="input" type="number" placeholder="Faturamento Serviços">
+            <input name="costs" class="input" type="number" placeholder="Custos">
+            <input name="expenses" class="input" type="number" placeholder="Despesas">
+            <input name="payrol" class="input" type="number" placeholder="Folha de Pagamento">
+            <button class="button" type="submit">Calculate</button>
         </form>      
     </section>
-
+    <section id="tableId" class="table-results">
+        <table>
+            <tr>
+                <th colspan="2">Tributação anual</th>
+            </tr>
+            <tr>
+                <td>Simples Nacional</td>
+                <td id="resultNationSimple"></td>
+            </tr>
+            <tr>
+                <td>Lucro Presumido</td>
+                <td id="resultPresumeProfit"></td>
+            </tr>
+            <tr>
+                <td>Lucro Real</td>
+                <td id="resultRealProfit"></td>
+            </tr>
+        </table>
+    </section>
     <script src="index.js"></script>
 </body>
 </html>
